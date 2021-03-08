@@ -9,6 +9,7 @@ export class AppComponent {
   
   // Bound to the value of the dark mode toggle
   darkTheme: boolean;
+  // #527c9e Color Logo
 
   constructor() {
     this.selectDarkOrLightTheme();
