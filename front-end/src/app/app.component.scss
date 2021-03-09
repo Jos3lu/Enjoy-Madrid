@@ -5,7 +5,6 @@ ion-menu ion-content {
 ion-menu ion-content {
   --padding-start: 8px;
   --padding-end: 8px;
-  --padding-top: 20px;
   --padding-bottom: 20px;
 }
 
@@ -13,27 +12,23 @@ ion-menu ion-list {
   padding: 20px 0;
 }
 
-ion-menu ion-note {
-  margin-bottom: 30px;
-}
-
 ion-menu ion-list-header,
 ion-menu ion-note {
   padding-left: 10px;
 }
 
-ion-menu ion-list#inbox-list {
+ion-menu ion-list#pages-list {
   border-bottom: 1px solid var(--ion-color-step-150, #d7d8da);
 }
 
-ion-menu ion-list#inbox-list ion-list-header {
+ion-menu ion-list#pages-list ion-list-header {
   font-size: 22px;
   font-weight: 600;
 
   min-height: 20px;
 }
 
-ion-menu ion-list#labels-list ion-list-header {
+ion-menu ion-list#preferences-list ion-list-header {
   font-size: 16px;
 
   margin-bottom: 18px;
@@ -74,4 +69,16 @@ ion-note {
 
 ion-item.selected {
   --color: var(--ion-color-primary);
+}
+
+ion-grid#user {
+  background-color: rgba(var(--ion-color-primary-rgb), 0.2);
+  margin-bottom: 20px;
+}
+
+/* Set element (temperature & distance) invisible when value is selected in the sidemenu */
+ion-select::part(placeholder),
+ion-select::part(text),
+ion-select::part(icon) {
+  display: none;
 }

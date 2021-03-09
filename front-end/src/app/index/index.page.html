@@ -8,7 +8,32 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <br>
-  <br>
-  Hola Mundo
+  <ion-list>
+    <ion-list-header>
+      <ion-label><h1>Mis rutas</h1></ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img alt="route" src="./assets/route.png">
+      </ion-thumbnail>
+      <ion-label>
+        <h2 id="title-route">Nombre Ruta 1</h2>
+        <h3>Tiempo total: Xh Ymin / Distancia total: Xkm</h3>
+        <h3></h3>
+        <p>Fecha Creación: xx-xx-xxxx</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img alt="route" src="./assets/route.png">
+      </ion-thumbnail>
+      <ion-label>
+        <h2 id="title-route">Nombre Ruta 2</h2>
+        <h3>Tiempo total: Xh Ymin / Distancia total: Xkm</h3>
+        <p>Fecha Creación: xx-xx-xxxx</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
